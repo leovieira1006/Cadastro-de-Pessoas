@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Pessoas</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Controle de Produtos</h1>
+    </header>
+
+    <main>
+        <h2>Cadastro de Pessoas</h2>
+        <div class="card">
+            <div class="inputcp">
+                <label>Nome</label>
+                <input type="text" id="cdtnome" placeholder="Nome" />
+            </div>
+            <div class="inputcp">
+                <label>CPF</label>
+                <input type="text" id="cdtcpf" placeholder="000.000.000-00" />
+            </div>
+            <div class="inputcp">
+                <label>Endereço</label>
+                <input type="text" id="cdtendereço" placeholder="Rua/Bairro/Cidade/UF" />
+            </div>
+
+            <button onclick="cadastro.Adicionar()">Adicionar</button>
+            <button onclick="cadastro.Adicionar()">Cancelar</button>
+        </div>
+        <div class="conteudo">
+            <table border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Endereço</th>
+                    <th>Remover</th>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
